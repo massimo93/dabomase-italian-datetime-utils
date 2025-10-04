@@ -60,6 +60,7 @@ namespace Dabomase.ItalianDateTimeUtils
                 || date.IsItalianRepublicDay()
                 || date.IsSaintsPeterAndPaulFeast()
                 || date.IsAssumptionOfMaryDay()
+                || date.IsSaintFrancisOfAssisiDay()
                 || date.IsAllSaintsDay()
                 || date.IsItalianNationalUnityAndArmedForcesDay()
                 || date.IsImmaculateConceptionDay()

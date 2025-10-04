@@ -140,6 +140,19 @@ namespace Dabomase.ItalianDateTimeUtils
             => dateTime.Month == 8 && dateTime.Day == 15;
 
         #endregion
+
+        #region October's
+
+        /// <summary>
+        /// Tells if given date is Saint Francis of Assisi, Patron of Italy, Day (i.e. October 4th).
+        /// This national holiday has been reinstituted by the Italian Government in 2025, starting from 2026.
+        /// </summary>
+        /// <param name="dateTime">The given date.</param>
+        /// <returns>True if given date is Saint Francis of Assisi Day; otherwise, false.</returns>
+        public static bool IsSaintFrancisOfAssisiDay(this DateTime dateTime)
+            => dateTime.Month == 10 && dateTime.Day == 4 && dateTime.Year > 2025;
+        
+        #endregion
         
         #region November's
 
