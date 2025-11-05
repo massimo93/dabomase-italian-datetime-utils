@@ -85,9 +85,6 @@ namespace Dabomase.ItalianDateTimeUtils
         /// </summary>
         /// <param name="dateTime">The given date.</param>
         /// <returns>True if given date is Italian Workers' Day; otherwise, false.</returns>
-        /// <remarks>
-        /// The updated method that replaces <see cref="IsWorkersDay"/>.
-        /// </remarks>
         public static bool IsItalianWorkersDay(this DateTime dateTime)
             => dateTime.Year >= 1890 && (dateTime.IsLateModernPeriodItalianWorkersDay() || dateTime.WasDuringRomeBirthday());
 
