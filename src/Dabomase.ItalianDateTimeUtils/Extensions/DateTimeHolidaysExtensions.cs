@@ -85,25 +85,6 @@ namespace Dabomase.ItalianDateTimeUtils
         /// </summary>
         /// <param name="dateTime">The given date.</param>
         /// <returns>True if given date is Italian Workers' Day; otherwise, false.</returns>
-        /// <remarks>
-        /// This method is obsolete. Use <see cref="IsItalianWorkersDay"/> instead.
-        /// This one is retained for backward compatibility and will be removed in a future version.
-        /// </remarks>
-        [Obsolete("Use '" + nameof(IsItalianWorkersDay) + "' instead. " +
-                  "This method is retained for backward compatibility and will be removed in a future version.")]
-        public static bool IsWorkersDay(this DateTime dateTime)
-            => dateTime.IsItalianWorkersDay();
-        
-        /// <summary>
-        /// Tells if given date is Italian Workers' Day:
-        /// from 1890 this day has been celebrated on May 1st during Late Modern Period,
-        /// or during City of Rome foundation celebration day (i.e. April 21st, from 1924 to 1944, both included).
-        /// </summary>
-        /// <param name="dateTime">The given date.</param>
-        /// <returns>True if given date is Italian Workers' Day; otherwise, false.</returns>
-        /// <remarks>
-        /// The updated method that replaces <see cref="IsWorkersDay"/>.
-        /// </remarks>
         public static bool IsItalianWorkersDay(this DateTime dateTime)
             => dateTime.Year >= 1890 && (dateTime.IsLateModernPeriodItalianWorkersDay() || dateTime.WasDuringRomeBirthday());
 
@@ -139,6 +120,19 @@ namespace Dabomase.ItalianDateTimeUtils
         public static bool IsAssumptionOfMaryDay(this DateTime dateTime)
             => dateTime.Month == 8 && dateTime.Day == 15;
 
+        #endregion
+
+        #region October's
+
+        /// <summary>
+        /// Tells if given date is Saint Francis of Assisi, Patron of Italy, Day (i.e. October 4th).
+        /// This national holiday has been reinstituted by the Italian Government in 2025, starting from 2026.
+        /// </summary>
+        /// <param name="dateTime">The given date.</param>
+        /// <returns>True if given date is Saint Francis of Assisi Day; otherwise, false.</returns>
+        public static bool IsSaintFrancisOfAssisiDay(this DateTime dateTime)
+            => dateTime.Month == 10 && dateTime.Day == 4 && dateTime.Year > 2025;
+        
         #endregion
         
         #region November's

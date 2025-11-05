@@ -5,17 +5,21 @@ Console.WriteLine("\n********************************************************");
 Console.WriteLine($"*** {Assembly.GetExecutingAssembly().GetName().Name} ***");
 Console.WriteLine("********************************************************\n");
 
+// Some variables
+var startDate = new DateTime(2025, 1, 1);
+var endDate = new DateTime(2026, 12, 31);
+
 //IsHoliday method usage samples
 var isTodayItalianHoliday = ItalianHolidaysUtils.IsHoliday(DateTime.UtcNow);
 var wasLastNovemberTheFirstItalianHoliday = ItalianHolidaysUtils.IsHoliday(new DateTime(2024, 11, 1));
 
 //Get holidays
 var italianHolidaysFor2024 = ItalianHolidaysUtils.GetYearlyHolidays(2024);
-var italianHolidaysInRange = ItalianHolidaysUtils.GetHolidaysInRange(new DateTime(2024, 3, 15), new DateTime(2025, 12, 15));
+var italianHolidaysFor2025 = ItalianHolidaysUtils.GetYearlyHolidays(2025);
+var italianHolidaysFor2026 = ItalianHolidaysUtils.GetYearlyHolidays(2026);
+var italianHolidaysInRange = ItalianHolidaysUtils.GetHolidaysInRange(startDate, endDate);
 
 //Get work days
-var startDate = new DateTime(2024, 7, 16);
-var endDate = new DateTime(2024, 12, 15);
 
 var italianOfficeDaysInRangeCount = ItalianWorkDaysUtils.HowManyOfficeDaysBetweenDates(startDate, endDate);
 var workDaysInRangeExcludingSundaysCount = ItalianWorkDaysUtils.HowManyWorkDaysBetweenDates(startDate, endDate, workDaysCondition: ItalianWorkDaysUtils.ExcludeSundaysCondition);
@@ -28,6 +32,18 @@ Console.WriteLine($"{nameof(wasLastNovemberTheFirstItalianHoliday)}: {wasLastNov
 
 Console.WriteLine("\nItalian holidays in 2024:");
 foreach (var holiday in italianHolidaysFor2024)
+{
+    Console.WriteLine(holiday.Date.ToString("yyyy-M-d dddd"));
+}
+
+Console.WriteLine("\nItalian holidays in 2025:");
+foreach (var holiday in italianHolidaysFor2025)
+{
+    Console.WriteLine(holiday.Date.ToString("yyyy-M-d dddd"));
+}
+
+Console.WriteLine("\nItalian holidays in 2026:");
+foreach (var holiday in italianHolidaysFor2026)
 {
     Console.WriteLine(holiday.Date.ToString("yyyy-M-d dddd"));
 }

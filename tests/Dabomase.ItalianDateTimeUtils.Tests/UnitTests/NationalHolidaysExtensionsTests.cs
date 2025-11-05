@@ -194,10 +194,10 @@ public sealed class NationalHolidaysExtensionsTests
     public void IsSaintJosephsDay_ShouldReturnFalseForNon19thOfMonth()
     {
         // Arrange
-        DateTime non19thDay = new(1975, 3, 20);
+        DateTime non19ThDay = new(1975, 3, 20);
 
         // Act
-        bool result = non19thDay.IsSaintJosephsDay();
+        bool result = non19ThDay.IsSaintJosephsDay();
 
         // Assert
         Assert.False(result);
@@ -602,6 +602,27 @@ public sealed class NationalHolidaysExtensionsTests
 
         // Act
         bool result = date.IsAssumptionOfMaryDay();
+
+        // Assert
+        Assert.Equal(expected, result);
+    }
+
+    #endregion
+
+    #region October's'
+
+    [Theory]
+    [InlineData(2026, 10, 4, true)] // Saint Francis' Day
+    [InlineData(2025, 10, 4, false)] // No-holiday in 2025
+    [InlineData(2026, 11, 4, false)] // Wrong month, no-holiday
+    [InlineData(2026, 10, 3, false)] // Wrong day, no-holiday
+    public void IsSaintFrancisOfAssisiDay_ShouldReturnCorrectResult(int year, int month, int day, bool expected)
+    {
+        // Arrange
+        DateTime date = new(year, month, day);
+
+        // Act
+        bool result = date.IsSaintFrancisOfAssisiDay();
 
         // Assert
         Assert.Equal(expected, result);

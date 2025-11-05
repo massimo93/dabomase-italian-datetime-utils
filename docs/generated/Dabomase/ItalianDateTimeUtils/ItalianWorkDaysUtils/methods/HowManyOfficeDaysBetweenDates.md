@@ -10,7 +10,7 @@
 **Declaring Type:** [ItalianWorkDaysUtils](../index.md)  
 **Namespace:** [Dabomase.ItalianDateTimeUtils](../../index.md)  
 **Assembly:** Dabomase.ItalianDateTimeUtils  
-**Assembly Version:** 1.1.0+b743caee059fb5e92ab9d19fe321216fe1d37576
+**Assembly Version:** 1.2.0+cff2805d2cb970b16ce9cd163fc27dedbd215719
 
 Gets the number of Italian office days between two given dates, removing weekends and Italian national and local holidays.
 
@@ -30,7 +30,7 @@ The end date.
 
 ## Remarks
 
-The updated method that replaces [HowManyItalianOfficeDaysBetweenDates(DateTime, DateTime)](HowManyItalianOfficeDaysBetweenDates.md).
+A typical Italian office week goes from Monday to Friday.
 
 ## Returns
 

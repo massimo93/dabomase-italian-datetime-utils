@@ -5,17 +5,17 @@
   </auto-generated>   
 -->
 
-# DateTimeHolidaysExtensions.IsNewYearsDay Method
+# DateTimeHolidaysExtensions.IsSaintFrancisOfAssisiDay Method
 
 **Declaring Type:** [DateTimeHolidaysExtensions](../index.md)  
 **Namespace:** [Dabomase.ItalianDateTimeUtils](../../index.md)  
 **Assembly:** Dabomase.ItalianDateTimeUtils  
 **Assembly Version:** 1.2.0+cff2805d2cb970b16ce9cd163fc27dedbd215719
 
-Tells if given date is New Year's Day.
+Tells if given date is Saint Francis of Assisi, Patron of Italy, Day (i.e. October 4th). This national holiday has been reinstituted by the Italian Government in 2025, starting from 2026.
 
 ```csharp
-public static bool IsNewYearsDay(this DateTime dateTime);
+public static bool IsSaintFrancisOfAssisiDay(this DateTime dateTime);
 ```
 
 ## Parameters
@@ -28,7 +28,7 @@ The given date.
 
 bool
 
-True if given date is New Year's Day; otherwise, false.
+True if given date is Saint Francis of Assisi Day; otherwise, false.
 
 ___
 

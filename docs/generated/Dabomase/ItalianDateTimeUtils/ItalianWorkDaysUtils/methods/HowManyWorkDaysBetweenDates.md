@@ -10,7 +10,7 @@
 **Declaring Type:** [ItalianWorkDaysUtils](../index.md)  
 **Namespace:** [Dabomase.ItalianDateTimeUtils](../../index.md)  
 **Assembly:** Dabomase.ItalianDateTimeUtils  
-**Assembly Version:** 1.1.0+b743caee059fb5e92ab9d19fe321216fe1d37576
+**Assembly Version:** 1.2.0+cff2805d2cb970b16ce9cd163fc27dedbd215719
 
 Gets the number of Italian work days between two given dates, keeping those that match a given condition  but still removing Italian both national and local holidays.
 
@@ -31,10 +31,6 @@ The end date.
 `workDaysCondition`  Func\<DateTime, bool\>
 
 Condition to consider matching dates as work days.
-
-## Remarks
-
-The updated method that replaces [HowManyItalianWorkDaysBetweenDates(DateTime, DateTime, Func\<DateTime, bool\>)](HowManyItalianWorkDaysBetweenDates.md).
 
 ## Returns
 

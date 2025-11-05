@@ -10,7 +10,7 @@
 **Declaring Type:** [ItalianHolidaysUtils](../index.md)  
 **Namespace:** [Dabomase.ItalianDateTimeUtils](../../index.md)  
 **Assembly:** Dabomase.ItalianDateTimeUtils  
-**Assembly Version:** 1.1.0+b743caee059fb5e92ab9d19fe321216fe1d37576
+**Assembly Version:** 1.2.0+cff2805d2cb970b16ce9cd163fc27dedbd215719
 
 Gets a DateTime list of Italian holidays between given dates.
 
@@ -27,10 +27,6 @@ The start date.
 `endDate`  DateTime
 
 The end date.
-
-## Remarks
-
-The updated method that replaces [GetItalianHolidaysInRange(DateTime, DateTime)](GetItalianHolidaysInRange.md).
 
 ## Returns
 

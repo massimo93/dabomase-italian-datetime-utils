@@ -3,10 +3,10 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>Dabomase.ItalianDateTimeUtils</AssemblyName>
-    <Version>1.1.1</Version>
-    <PackageReleaseNotes>Authors' Copyright update for 2025.</PackageReleaseNotes>
+    <Version>1.2.0</Version>
+    <PackageReleaseNotes>Add newly introduced Saint Francis of Assisi public national holiday (Oct 4th), starting from 2026.</PackageReleaseNotes>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
-    <Description>Simple and pluggable utilities library that aims to help Italian developers or any developer who need support when dealing with Italian holidays and work days calculations.</Description>
+    <Description>Simple and pluggable utilities library that aims to help Italian developers or any developer who needs support when dealing with Italian holidays and work days calculations.</Description>
     <Authors>Davide Borghi (@davideborghi), Massimo Serra (@massimo93)</Authors>
     <PackageProjectUrl>https://github.com/massimo93/dabomase-italian-datetime-utils</PackageProjectUrl>
     <RequireLicenseAcceptance>true</RequireLicenseAcceptance>

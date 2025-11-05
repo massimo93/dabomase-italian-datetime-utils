@@ -1,6 +1,19 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [1.2.0](https://www.nuget.org/packages/Dabomase.ItalianDateTimeUtils/1.2.0) - 2025-11-05
+Addition of newly introduced Saint Francis of Assisi public national holiday (Oct 4th), starting from 2026.
+
+### Added
+- October 4th included as Saint Francis of Assisi Day new public national holiday
+
+### Removed
+- `IsItalianWorkersDay()` replaces `IsWorkersDay()`
+- `GetYearlyHolidays()` replaces `GetYearlyItalianHolidays()`
+- `GetHolidaysInRange()` replaces `GetItalianHolidaysInRange()`
+- `HowManyOfficeDaysBetweenDates()` replaces `HowManyItalianOfficeDaysBetweenDates()`
+- `HowManyWorkDaysBetweenDates()` replaces `HowManyItalianWorkDaysBetweenDates()`.
+
 ## [1.1.1](https://www.nuget.org/packages/Dabomase.ItalianDateTimeUtils/1.1.1) - 2025-02-03
 Authors' Copyright update for 2025.
 
