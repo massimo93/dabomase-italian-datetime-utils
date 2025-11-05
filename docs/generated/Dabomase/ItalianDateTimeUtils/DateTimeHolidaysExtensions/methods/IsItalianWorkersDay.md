@@ -10,7 +10,7 @@
 **Declaring Type:** [DateTimeHolidaysExtensions](../index.md)  
 **Namespace:** [Dabomase.ItalianDateTimeUtils](../../index.md)  
 **Assembly:** Dabomase.ItalianDateTimeUtils  
-**Assembly Version:** 1.1.0+b743caee059fb5e92ab9d19fe321216fe1d37576
+**Assembly Version:** 1.2.0+64bb5d4fcc93160aee6f0f5e05d17d1ae3fdb037
 
 Tells if given date is Italian Workers' Day: from 1890 this day has been celebrated on May 1st during Late Modern Period, or during City of Rome foundation celebration day (i.e. April 21st, from 1924 to 1944, both included).
 
@@ -26,7 +26,7 @@ The given date.
 
 ## Remarks
 
-The updated method that replaces [IsWorkersDay(DateTime)](IsWorkersDay.md).
+The updated method that replaces .
 
 ## Returns
 

@@ -9,7 +9,7 @@
 
 **Namespace:** [Dabomase.ItalianDateTimeUtils](../index.md)  
 **Assembly:** Dabomase.ItalianDateTimeUtils  
-**Assembly Version:** 1.1.0+b743caee059fb5e92ab9d19fe321216fe1d37576
+**Assembly Version:** 1.2.0+64bb5d4fcc93160aee6f0f5e05d17d1ae3fdb037
 
 Provides extension methods when working with DateTime objects related to national holidays.
 
@@ -34,10 +34,10 @@ public static class DateTimeHolidaysExtensions
 | [IsItalianRepublicDay(DateTime)](methods/IsItalianRepublicDay.md)                                                                               | Tells if given date is Italian Republic Day (i.e. June 2nd since 1946 excluded).                                                                                                                                                 |
 | [IsItalianWorkersDay(DateTime)](methods/IsItalianWorkersDay.md)                                                                                 | Tells if given date is Italian Workers' Day: from 1890 this day has been celebrated on May 1st during Late Modern Period, or during City of Rome foundation celebration day (i.e. April 21st, from 1924 to 1944, both included). |
 | [IsNewYearsDay(DateTime)](methods/IsNewYearsDay.md)                                                                                             | Tells if given date is New Year's Day.                                                                                                                                                                                           |
+| [IsSaintFrancisOfAssisiDay(DateTime)](methods/IsSaintFrancisOfAssisiDay.md)                                                                     | Tells if given date is Saint Francis of Assisi, Patron of Italy, Day (i.e. October 4th). This national holiday has been reinstituted by the Italian Government in 2025, starting from 2026.                                      |
 | [IsSaintJosephsDay(DateTime)](methods/IsSaintJosephsDay.md)                                                                                     | Tells if given date is Saint Joseph's Day (i.e. March 19th, until 1977 excluded).                                                                                                                                                |
 | [IsSaintStephensDay(DateTime)](methods/IsSaintStephensDay.md)                                                                                   | Tells if given date is Saint Stephen's Day (i.e. December 26th).                                                                                                                                                                 |
 | [IsSaintsPeterAndPaulFeast(DateTime)](methods/IsSaintsPeterAndPaulFeast.md)                                                                     | Tells if given date is Saints Peter and Paul Feast (i.e. June 29th until 1977 excluded).                                                                                                                                         |
-| [IsWorkersDay(DateTime)](methods/IsWorkersDay.md)                                                                                               | Tells if given date is Italian Workers' Day: from 1890 this day has been celebrated on May 1st during Late Modern Period, or during City of Rome foundation celebration day (i.e. April 21st, from 1924 to 1944, both included). |
 
 ___
 

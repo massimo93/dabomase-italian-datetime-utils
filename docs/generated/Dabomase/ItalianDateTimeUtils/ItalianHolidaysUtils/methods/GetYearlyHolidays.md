@@ -10,7 +10,7 @@
 **Declaring Type:** [ItalianHolidaysUtils](../index.md)  
 **Namespace:** [Dabomase.ItalianDateTimeUtils](../../index.md)  
 **Assembly:** Dabomase.ItalianDateTimeUtils  
-**Assembly Version:** 1.1.0+b743caee059fb5e92ab9d19fe321216fe1d37576
+**Assembly Version:** 1.2.0+64bb5d4fcc93160aee6f0f5e05d17d1ae3fdb037
 
 Gets a DateTime list of yearly Italian holidays.
 
@@ -23,10 +23,6 @@ public static IEnumerable<DateTime> GetYearlyHolidays(int year);
 `year`  int
 
 The given year.
-
-## Remarks
-
-The updated method that replaces [GetYearlyItalianHolidays(int)](GetYearlyItalianHolidays.md).
 
 ## Returns
 

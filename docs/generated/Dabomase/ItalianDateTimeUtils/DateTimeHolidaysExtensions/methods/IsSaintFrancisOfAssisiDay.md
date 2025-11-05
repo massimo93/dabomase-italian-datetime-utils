@@ -5,17 +5,17 @@
   </auto-generated>   
 -->
 
-# DateTimeHolidaysExtensions.IsSaintStephensDay Method
+# DateTimeHolidaysExtensions.IsSaintFrancisOfAssisiDay Method
 
 **Declaring Type:** [DateTimeHolidaysExtensions](../index.md)  
 **Namespace:** [Dabomase.ItalianDateTimeUtils](../../index.md)  
 **Assembly:** Dabomase.ItalianDateTimeUtils  
 **Assembly Version:** 1.2.0+64bb5d4fcc93160aee6f0f5e05d17d1ae3fdb037
 
-Tells if given date is Saint Stephen's Day (i.e. December 26th).
+Tells if given date is Saint Francis of Assisi, Patron of Italy, Day (i.e. October 4th). This national holiday has been reinstituted by the Italian Government in 2025, starting from 2026.
 
 ```csharp
-public static bool IsSaintStephensDay(this DateTime dateTime);
+public static bool IsSaintFrancisOfAssisiDay(this DateTime dateTime);
 ```
 
 ## Parameters
@@ -28,7 +28,7 @@ The given date.
 
 bool
 
-True if given date is Saint Stephen's Day; otherwise, false.
+True if given date is Saint Francis of Assisi Day; otherwise, false.
 
 ___
 
