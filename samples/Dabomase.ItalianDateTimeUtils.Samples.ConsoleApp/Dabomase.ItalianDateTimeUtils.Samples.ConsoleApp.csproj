@@ -10,7 +10,7 @@
 
     <ItemGroup Condition="'$(UseNuGetPackage)' == 'true'">
         <!-- Reference the NuGet package -->
-        <PackageReference Include="Dabomase.ItalianDateTimeUtils" Version="1.1.1" />
+        <PackageReference Include="Dabomase.ItalianDateTimeUtils" Version="1.2.0" />
     </ItemGroup>
 
     <ItemGroup Condition="'$(UseNuGetPackage)' != 'true'">
