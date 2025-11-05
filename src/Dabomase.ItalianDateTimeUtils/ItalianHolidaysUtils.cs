@@ -98,24 +98,6 @@ namespace Dabomase.ItalianDateTimeUtils
         /// <param name="year">The given year.</param>
         /// <returns>A list of yearly Italian holidays.</returns>
         /// <exception cref="ArgumentException">Thrown when provided year is before 1946.</exception>
-        /// <remarks>
-        /// This method is obsolete. Use <see cref="GetYearlyHolidays"/> instead.
-        /// This one is retained for backward compatibility and will be removed in a future version.
-        /// </remarks>
-        [Obsolete("Use '" + nameof(GetYearlyHolidays) + "' instead. " +
-                  "This method is retained for backward compatibility and will be removed in a future version.")]
-        public static IEnumerable<DateTime> GetYearlyItalianHolidays(int year)
-            => GetYearlyHolidays(year);
-
-        /// <summary>
-        /// Gets a DateTime list of yearly Italian holidays.
-        /// </summary>
-        /// <param name="year">The given year.</param>
-        /// <returns>A list of yearly Italian holidays.</returns>
-        /// <exception cref="ArgumentException">Thrown when provided year is before 1946.</exception>
-        /// <remarks>
-        /// The updated method that replaces <see cref="GetYearlyItalianHolidays"/>.
-        /// </remarks>
         public static IEnumerable<DateTime> GetYearlyHolidays(int year)
         {
             if (year < 1946)
@@ -134,26 +116,6 @@ namespace Dabomase.ItalianDateTimeUtils
         /// <returns>A list of Italian holidays in given dates range.</returns>
         /// <exception cref="ArgumentException">Thrown when provided start date is after given end date.</exception>
         /// <exception cref="ArgumentException">Thrown when one or both of the provided dates' year is before 1946.</exception>
-        /// <remarks>
-        /// This method is obsolete. Use <see cref="GetHolidaysInRange"/> instead.
-        /// This one is retained for backward compatibility and will be removed in a future version.
-        /// </remarks>
-        [Obsolete("Use '" + nameof(GetHolidaysInRange) + "' instead. " +
-                  "This method is retained for backward compatibility and will be removed in a future version.")]
-        public static IEnumerable<DateTime> GetItalianHolidaysInRange(DateTime startDate, DateTime endDate)
-            => GetHolidaysInRange(startDate, endDate);
-
-        /// <summary>
-        /// Gets a DateTime list of Italian holidays between given dates.
-        /// </summary>
-        /// <param name="startDate">The start date.</param>
-        /// <param name="endDate">The end date.</param>
-        /// <returns>A list of Italian holidays in given dates range.</returns>
-        /// <exception cref="ArgumentException">Thrown when provided start date is after given end date.</exception>
-        /// <exception cref="ArgumentException">Thrown when one or both of the provided dates' year is before 1946.</exception>
-        /// <remarks>
-        /// The updated method that replaces <see cref="GetItalianHolidaysInRange"/>.
-        /// </remarks>
         public static IEnumerable<DateTime> GetHolidaysInRange(DateTime startDate, DateTime endDate)
         {
             startDate = startDate.Date;
