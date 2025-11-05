@@ -86,22 +86,6 @@ namespace Dabomase.ItalianDateTimeUtils
         /// <param name="dateTime">The given date.</param>
         /// <returns>True if given date is Italian Workers' Day; otherwise, false.</returns>
         /// <remarks>
-        /// This method is obsolete. Use <see cref="IsItalianWorkersDay"/> instead.
-        /// This one is retained for backward compatibility and will be removed in a future version.
-        /// </remarks>
-        [Obsolete("Use '" + nameof(IsItalianWorkersDay) + "' instead. " +
-                  "This method is retained for backward compatibility and will be removed in a future version.")]
-        public static bool IsWorkersDay(this DateTime dateTime)
-            => dateTime.IsItalianWorkersDay();
-        
-        /// <summary>
-        /// Tells if given date is Italian Workers' Day:
-        /// from 1890 this day has been celebrated on May 1st during Late Modern Period,
-        /// or during City of Rome foundation celebration day (i.e. April 21st, from 1924 to 1944, both included).
-        /// </summary>
-        /// <param name="dateTime">The given date.</param>
-        /// <returns>True if given date is Italian Workers' Day; otherwise, false.</returns>
-        /// <remarks>
         /// The updated method that replaces <see cref="IsWorkersDay"/>.
         /// </remarks>
         public static bool IsItalianWorkersDay(this DateTime dateTime)
