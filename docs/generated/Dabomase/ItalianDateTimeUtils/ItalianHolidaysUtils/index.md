@@ -9,7 +9,7 @@
 
 **Namespace:** [Dabomase.ItalianDateTimeUtils](../index.md)  
 **Assembly:** Dabomase.ItalianDateTimeUtils  
-**Assembly Version:** 1.2.0+64bb5d4fcc93160aee6f0f5e05d17d1ae3fdb037
+**Assembly Version:** 1.2.0+cff2805d2cb970b16ce9cd163fc27dedbd215719
 
 Provides static utility methods when working with Italian holidays checks.
 
